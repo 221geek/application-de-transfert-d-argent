@@ -1,0 +1,132 @@
+<?php //is_granted%2528%2527ROLE_ADMIN%2527%2529%2520and%2520%2528object.owner%2520%253D%253D%2520user%2520and%2520previous_object.owner%2520%253D%253D%2520user%2529%252F%252F_api_collection_operation_name%257C_api_normalization_context%257C_api_resource_class%257C_controller%257C_firewall_context%257C_format%257C_route%257C_route_params%257Cauth_checker%257Cdata%257Cobject%257Cprevious_object%257Crequest%257Croles%257Ctoken%257Ctrust_resolver%257Cuser
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\ExpressionLanguage\\ParsedExpression'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\ParsedExpression')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\BinaryNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\BinaryNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\FunctionNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\FunctionNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\Node'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\Node')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\BinaryNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\BinaryNode'],
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\NameNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\BinaryNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\ExpressionLanguage\\ParsedExpression' => [
+            'nodes' => [
+                $o[1],
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Expression' => [
+            'expression' => [
+                'is_granted(\'ROLE_ADMIN\') and (object.owner == user and previous_object.owner == user)',
+            ],
+        ],
+        'stdClass' => [
+            'nodes' => [
+                1 => [
+                    'left' => $o[2],
+                    'right' => $o[5],
+                ],
+                [
+                    'arguments' => $o[3],
+                ],
+                [
+                    $o[4],
+                ],
+                5 => [
+                    'left' => $o[6],
+                    'right' => $o[12],
+                ],
+                [
+                    'left' => $o[7],
+                    'right' => $o[11],
+                ],
+                [
+                    'node' => $o[8],
+                    'attribute' => $o[9],
+                    'arguments' => $o[10],
+                ],
+                12 => [
+                    'left' => $o[13],
+                    'right' => $o[17],
+                ],
+                [
+                    'node' => $o[14],
+                    'attribute' => $o[15],
+                    'arguments' => $o[16],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'operator' => 'and',
+                ],
+                [
+                    'name' => 'is_granted',
+                ],
+                4 => [
+                    'value' => 'ROLE_ADMIN',
+                ],
+                [
+                    'operator' => 'and',
+                ],
+                [
+                    'operator' => '==',
+                ],
+                [
+                    'type' => 1,
+                ],
+                [
+                    'name' => 'object',
+                ],
+                [
+                    'value' => 'owner',
+                ],
+                11 => [
+                    'name' => 'user',
+                ],
+                [
+                    'operator' => '==',
+                ],
+                [
+                    'type' => 1,
+                ],
+                [
+                    'name' => 'previous_object',
+                ],
+                [
+                    'value' => 'owner',
+                ],
+                17 => [
+                    'name' => 'user',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode' => [
+            'isIdentifier' => [
+                4 => false,
+                9 => true,
+                15 => true,
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ArrayNode' => [
+            'index' => [
+                10 => -1,
+                16 => -1,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
