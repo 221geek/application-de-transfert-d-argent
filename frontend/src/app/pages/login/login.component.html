@@ -1,0 +1,20 @@
+<div id="login" class="d-flex flex-column justify-content-center align-items-center">
+    <h1>Connexion</h1>
+    <form [formGroup]="formLogin">
+        <div class="mt-4">
+            <mat-form-field>
+                <mat-label>Adresse Email</mat-label>
+                <input type="email" matInput placeholder="Adresse email" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="mt-4">
+            <mat-form-field>
+                <mat-label>Mot de passe</mat-label>
+                <input type="password" matInput placeholder="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <div class="mt-4">
+            <button mat-raised-button color="primary" (click)="onSubmit()">CONNEXION</button>
+        </div>
+    </form>
+</div>

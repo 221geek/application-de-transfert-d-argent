@@ -1,0 +1,44 @@
+<?php //%255BApp%255CEntity%255CAccount%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'post' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                    'put' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                ],
+            ],
+            'repositoryClass' => [
+                1 => 'App\\Repository\\AccountRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

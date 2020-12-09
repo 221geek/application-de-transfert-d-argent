@@ -1,0 +1,61 @@
+mat-drawer-container {
+    height: 100%;
+}
+
+mat-drawer {
+    width: 250px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
+
+    img {
+        width: 100%;
+    }
+}
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: scale(0.6);
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: rgb(59, 59, 59);
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+.ham2 .top {
+    stroke-dasharray: 40 121;
+}
+.ham2 .bottom {
+    stroke-dasharray: 40 121;
+}
+.ham2.active .top {
+    stroke-dashoffset: -102px;
+}
+.ham2.active .bottom {
+    stroke-dashoffset: -102px;
+}
+.fa {
+    font-size: 1.4em;
+    color: rgb(83, 83, 83);
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+    font-size: 1.2em;
+    transition: 0.4s all;
+}
+.menu a.active, .menu a:hover {
+    color: #1565C0;
+}

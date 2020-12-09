@@ -1,0 +1,58 @@
+<div class="animate__animated animate__slideInUp">
+    <h3>Ajouter un nouveau utilisateur</h3>
+
+    <div class="d-flex">
+        <mat-card class="m-5 w-50 p-5">
+            <form [formGroup]="newUserForm">
+                <div>
+                    <mat-form-field class="">
+                        <mat-label>Nom:</mat-label>
+                        <input matInput type="text" placeholder="Nom" formControlName="lastname">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="">
+                        <mat-label>Prénom:</mat-label>
+                        <input matInput type="text" placeholder="Prénom" formControlName="firstname">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="">
+                        <mat-label>Email:</mat-label>
+                        <input matInput type="email" placeholder="Email" formControlName="email">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="">
+                        <mat-label>Téléphone:</mat-label>
+                        <input matInput type="number" placeholder="telephone" formControlName="phone">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Role:</mat-label>
+                        <mat-select formControlName="role">
+                        <mat-option *ngFor="let item of roles" value="{{item.id}}">{{item.wording}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="">
+                        <mat-label>Mot de passe:</mat-label>
+                        <input matInput type="password" placeholder="Mot de passe" formControlName="password">
+                    </mat-form-field>
+                </div>
+                <div class="mt-4 d-flex justify-content-end">
+                    <button mat-raised-button color="primary" (click)="addUser()" [disabled]="!newUserForm.valid">Ajouter</button>
+                </div>
+            </form>
+        </mat-card>
+        <mat-card class="m-5 w-50 d-flex justify-content-center align-items-center animate__animated animate__bounceIn" *ngIf="showMatCard">
+            <div class="text-center">
+                <fa-icon [icon]="faCheckCircle"></fa-icon>
+                <h5 class="mt-4">utilisateur créé</h5>
+                <a  [routerLink]="['/users/'+idNewUser]"><button class="mt-4" mat-button>Voir profil</button></a>
+            </div>
+        </mat-card>
+    </div>
+</div>

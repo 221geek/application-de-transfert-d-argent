@@ -1,0 +1,78 @@
+img {
+    width: 150px;
+    margin-top: -100px;
+}
+
+.switch{
+    background-color: #DEDEDE;
+    position: relative;
+    width: 65px;
+    height: 25px;
+    border-radius: 30px;
+    transition: background .4s ease;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #7FCBC4;
+    transition: background .4s ease;
+}
+
+.button{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    transition: all .4s ease;
+}
+
+.active .button{
+    transform: translate(45px,-50%);
+    background-color: rgb(68, 204, 68);
+    transition: all .4s ease;
+}
+
+.button:after,
+.button:before{
+    content: '';
+    position: absolute;
+    top: 35%;
+    height: 4px;
+    width: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.button:after{
+    left: 27%;
+}
+
+.button:before{
+    right: 27%;
+}
+
+.smile{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 12px;
+    height: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #fff;
+    border-bottom: 0;
+}
+
+.active .smile{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 0;
+    border-bottom: 2px solid #fff;
+}
